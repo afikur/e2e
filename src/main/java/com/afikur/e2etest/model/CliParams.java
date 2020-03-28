@@ -1,4 +1,4 @@
-package com.afikur.e2etest.services;
+package com.afikur.e2etest.model;
 
 import com.beust.jcommander.Parameter;
 import lombok.Data;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Data
-public class CliParamService {
+public class CliParams {
     @Parameter(names={"--user", "-u"})
     @Value("${git.username}")
     private String username;
