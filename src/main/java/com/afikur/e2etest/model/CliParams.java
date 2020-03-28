@@ -23,4 +23,8 @@ public class CliParams {
     @Parameter(names={"--directory", "-d"})
     @Value("${git.directory}")
     private String directory;
+
+    @Parameter(names={"--applicationName", "--application", "-app"})
+    @Value("${application.name}")
+    private String applicationName;
 }
